@@ -1,10 +1,13 @@
 #!/bin/bash
-set -eux
+
+set -ex
 
 if [[ -z $WORKDIR ]] ; then
-    WORKDIR=`dirname $0`
+    WORKDIR=$(dirname $0)
 fi
 cd $WORKDIR
+
+set -u
 
 wget -qnc http://www.statmt.org/wmt13/training-parallel-europarl-v7.tgz &
 wget -qnc http://data.statmt.org/wmt17/translation-task/training-parallel-ep-v8.tgz &
