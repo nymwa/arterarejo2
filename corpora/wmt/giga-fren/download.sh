@@ -11,5 +11,5 @@ set -u
 
 wget http://www.statmt.org/wmt10/training-giga-fren.tar
 
-tar xvzf training-giga-fren.tar
+tar xvf training-giga-fren.tar
 
