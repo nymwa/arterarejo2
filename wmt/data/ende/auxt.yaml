@@ -1,0 +1,16 @@
+iter: 100
+source: ../../../start.sh
+source_lang: en
+target_lang: de
+threads: 40
+lines: 120000
+prepare:
+   bpe_model: ../../../preprocessed/deen/bpe/wmt17deen.32000.model
+   source: ../../../preprocessed/deen/regularized/regularized.en.gz
+   target: ../../../preprocessed/deen/regularized/regularized.de.gz
+   max_length: 400
+   source_dropout: 0.10
+   target_dropout: 0.10
+preprocess:
+   valid: ../../../preprocessed/deen/valid/wmt13.ende.encoded
+

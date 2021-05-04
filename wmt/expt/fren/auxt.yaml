@@ -1,0 +1,29 @@
+source: ../../../start.sh
+data: ../../data/fren/
+data_indices:
+   - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+train:
+   copy_data_bin: true
+   seed_list: [33308]
+   max_epoch: 10
+   update_freq: 2
+   max_tokens: 6000
+   arch: base
+   dropout: 0.1
+   attention_dropout: 0.0
+   activation_dropout: 0.0
+   lr: 0.003
+   warmup_updates: 4000
+   clip_norm: 0.3
+   weight_decay: 0.0
+generate:
+   epoch:
+      start: 6
+   beam: 4
+   dataset: wmt14
+   valid_dataset: wmt13
+   test_dataset: wmt14/full
+   source_lang: fr
+   target_lang: en
+   bpe_model_path: ../../../preprocessed/fren/bpe/wmt14fren.32000.model
+

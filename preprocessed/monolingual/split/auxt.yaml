@@ -1,0 +1,4 @@
+source: ../../../start.sh
+iter: 40
+input_path: ../filtered/filtered.gz
+

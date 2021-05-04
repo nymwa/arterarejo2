@@ -1,0 +1,16 @@
+iter: 150
+source: ../../../start.sh
+source_lang: fi
+target_lang: en
+threads: 40
+lines: 70000
+prepare:
+   bpe_model: ../../../preprocessed/fien/bpe/wmt17fien.16000.model
+   source: ../../../preprocessed/fien/regularized/regularized.fi.gz
+   target: ../../../preprocessed/fien/regularized/regularized.en.gz
+   max_length: 400
+   source_dropout: 0.10
+   target_dropout: 0.10
+preprocess:
+   valid: ../../../preprocessed/fien/valid/wmt16.enfi.encoded
+

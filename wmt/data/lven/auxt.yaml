@@ -1,0 +1,16 @@
+iter: 150
+source: ../../../start.sh
+source_lang: lv
+target_lang: en
+threads: 40
+lines: 120000
+prepare:
+   bpe_model: ../../../preprocessed/lven/bpe/wmt17lven.16000.model
+   source: ../../../preprocessed/lven/regularized/regularized.lv.gz
+   target: ../../../preprocessed/lven/regularized/regularized.en.gz
+   max_length: 400
+   source_dropout: 0.10
+   target_dropout: 0.10
+preprocess:
+   valid: ../../../preprocessed/lven/valid/wmt17dev.enlv.encoded
+

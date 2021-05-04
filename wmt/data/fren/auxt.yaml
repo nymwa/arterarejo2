@@ -1,0 +1,16 @@
+iter: 10
+source: ../../../start.sh
+source_lang: fr
+target_lang: en
+threads: 40
+lines: 200000
+prepare:
+   bpe_model: ../../../preprocessed/fren/bpe/wmt14fren.32000.model
+   source: ../../../preprocessed/fren/regularized/regularized.fr.gz
+   target: ../../../preprocessed/fren/regularized/regularized.en.gz
+   max_length: 400
+   source_dropout: 0.10
+   target_dropout: 0.10
+preprocess:
+   valid: ../../../preprocessed/fren/valid/wmt13.enfr.encoded
+
