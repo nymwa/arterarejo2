@@ -1,0 +1,47 @@
+source: ../start.sh
+threads: 40
+lines: 10000
+indices: 4
+segments: 40
+translation_groups: 2
+join_groups: 2
+buffer_size: 256
+batch_size: 32
+max_length: 400
+ratio: 2.0
+input_data: ../preprocessed/monolingual/split/split
+bridges:
+   de:
+      bpe_model: ../preprocessed/deen/bpe/wmt17deen.32000.model
+      fore:
+         data_bin: ../wmt/data/ende/0/data-bin
+         checkpoint: ../wmt/expt/ende/0/checkpoints/checkpoint100.pt
+      back:
+         data_bin: ../wmt/data/deen/0/data-bin
+         checkpoint: ../wmt/expt/deen/0/checkpoints/checkpoint100.pt
+   fi:
+      bpe_model: ../preprocessed/fien/bpe/wmt17fien.16000.model
+      fore:
+         data_bin: ../wmt/data/enfi/0/data-bin
+         checkpoint: ../wmt/expt/enfi/0/checkpoints/checkpoint150.pt
+      back:
+         data_bin: ../wmt/data/fien/0/data-bin
+         checkpoint: ../wmt/expt/fien/0/checkpoints/checkpoint150.pt
+   fr:
+      bpe_model: ../preprocessed/fren/bpe/wmt14fren.32000.model
+      fore:
+         data_bin: ../wmt/data/enfr/0/data-bin
+         checkpoint: ../wmt/expt/enfr/0/checkpoints/checkpoint10.pt
+      back:
+         data_bin: ../wmt/data/fren/0/data-bin
+         checkpoint: ../wmt/expt/fren/0/checkpoints/checkpoint10.pt
+   lv:
+      bpe_model: ../preprocessed/lven/bpe/wmt17lven.16000.model
+      fore:
+         data_bin: ../wmt/data/enlv/0/data-bin
+         checkpoint: ../wmt/expt/enlv/0/checkpoints/checkpoint150.pt
+      back:
+         data_bin: ../wmt/data/lven/0/data-bin
+         checkpoint: ../wmt/expt/lven/0/checkpoints/checkpoint150.pt
+
+

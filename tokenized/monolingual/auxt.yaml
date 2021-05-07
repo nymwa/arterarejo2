@@ -1,0 +1,6 @@
+source: ../../../start.sh
+iter: 40
+threads: 40
+lines: 20000
+input_path: ../../preprocessed/monolingual/split/split
+

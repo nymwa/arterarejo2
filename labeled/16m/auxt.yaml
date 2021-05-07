@@ -1,0 +1,9 @@
+source: ../../start.sh
+threads: 40
+lines: 2000
+input_list:
+   - ../../rtt16M/0/merged.gz
+   - ../../rtt16M/1/merged.gz
+   - ../../rtt16M/2/merged.gz
+   - ../../rtt16M/3/merged.gz
+
