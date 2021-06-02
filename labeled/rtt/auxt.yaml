@@ -1,0 +1,45 @@
+source: ../../start.sh
+threads: 40
+lines: 2000
+input_list:
+   - ../../rtt/0/merged.gz
+   - ../../rtt/1/merged.gz
+   - ../../rtt/2/merged.gz
+   - ../../rtt/3/merged.gz
+   - ../../rtt/4/merged.gz
+   - ../../rtt/5/merged.gz
+   - ../../rtt/6/merged.gz
+   - ../../rtt/7/merged.gz
+   - ../../rtt/8/merged.gz
+   - ../../rtt/9/merged.gz
+   - ../../rtt/10/merged.gz
+   - ../../rtt/11/merged.gz
+   - ../../rtt/12/merged.gz
+   - ../../rtt/13/merged.gz
+   - ../../rtt/14/merged.gz
+   - ../../rtt/15/merged.gz
+   - ../../rtt/16/merged.gz
+   - ../../rtt/17/merged.gz
+   - ../../rtt/18/merged.gz
+   - ../../rtt/19/merged.gz
+   - ../../rtt/20/merged.gz
+   - ../../rtt/21/merged.gz
+   - ../../rtt/22/merged.gz
+   - ../../rtt/23/merged.gz
+   - ../../rtt/24/merged.gz
+   - ../../rtt/25/merged.gz
+   - ../../rtt/26/merged.gz
+   - ../../rtt/27/merged.gz
+   - ../../rtt/28/merged.gz
+   - ../../rtt/29/merged.gz
+   - ../../rtt/30/merged.gz
+   - ../../rtt/31/merged.gz
+   - ../../rtt/32/merged.gz
+   - ../../rtt/33/merged.gz
+   - ../../rtt/34/merged.gz
+   - ../../rtt/35/merged.gz
+   - ../../rtt/36/merged.gz
+   - ../../rtt/37/merged.gz
+   - ../../rtt/38/merged.gz
+   - ../../rtt/39/merged.gz
+

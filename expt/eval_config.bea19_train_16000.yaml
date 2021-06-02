@@ -1,0 +1,36 @@
+errant_source_path: ../errant/start.sh
+bea19:
+   valid_orig: ../corpora/bea19/eval/ABCN.dev.bea19.orig
+   valid_src: ../preprocessed/bea19/eval/bea19_train_16000/bea19_valid.src
+   test_src: ../preprocessed/bea19/eval/bea19_train_16000/bea19_test.src
+   valid_m2: ../corpora/bea19/wi+locness/wi+locness/m2/ABCN.dev.gold.bea19.m2
+conll:
+   m2_scorer: ../m2scorer/m2scorer/m2scorer
+   valid_src: ../preprocessed/bea19/eval/bea19_train_16000/conll13.src
+   test_src: ../preprocessed/bea19/eval/bea19_train_16000/conll14.src
+   valid_m2: ../corpora/gec/conll13/release2.3.1/original/data/official-preprocessed.m2
+   test_m2: ../corpora/gec/conll14/conll14st-test-data/noalt/official-2014.combined.m2
+fce:
+   valid_orig: ../preprocessed/bea19/eval/raw/fce_valid.src
+   test_orig: ../preprocessed/bea19/eval/raw/fce_test.src
+   valid_src: ../preprocessed/bea19/eval/bea19_train_16000/fce_valid.src
+   test_src: ../preprocessed/bea19/eval/bea19_train_16000/fce_test.src
+   valid_m2: ../corpora/bea19/fce/fce/m2/fce.dev.gold.bea19.m2
+   test_m2: ../corpora/bea19/fce/fce/m2/fce.test.gold.bea19.m2
+jfleg:
+   gleu_scorer: ../corpora/gec/jfleg/jfleg/eval/gleu.py
+   valid_orig: ../corpora/gec/jfleg/jfleg/dev/dev.src
+   test_orig: ../corpora/gec/jfleg/jfleg/test/test.src
+   valid_src: ../preprocessed/bea19/eval/bea19_train_16000/jfleg_valid.src
+   test_src: ../preprocessed/bea19/eval/bea19_train_16000/jfleg_test.src
+   valid_ref:
+      - ../corpora/gec/jfleg/jfleg/dev/dev.ref0
+      - ../corpora/gec/jfleg/jfleg/dev/dev.ref1
+      - ../corpora/gec/jfleg/jfleg/dev/dev.ref2
+      - ../corpora/gec/jfleg/jfleg/dev/dev.ref3
+   test_ref:
+      - ../corpora/gec/jfleg/jfleg/test/test.ref0
+      - ../corpora/gec/jfleg/jfleg/test/test.ref1
+      - ../corpora/gec/jfleg/jfleg/test/test.ref2
+      - ../corpora/gec/jfleg/jfleg/test/test.ref3
+
