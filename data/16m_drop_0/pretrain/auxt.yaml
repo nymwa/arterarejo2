@@ -1,0 +1,10 @@
+source: ../../../start.sh
+iter: 50
+segments: 4
+sentences: 16000000
+threads: 40
+max_length: 400
+dataset:
+   base: ../../../aeg/16m_drop_0
+   valid_pref: ../../../preprocessed/bea19/eval/monolingual_16000/bea19_valid
+

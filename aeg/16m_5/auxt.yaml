@@ -1,0 +1,23 @@
+source: ../../start.sh
+readied:
+   - ../../labeled/rtt/readied.0.gz
+   - ../../labeled/rtt/readied.1.gz
+   - ../../labeled/rtt/readied.2.gz
+   - ../../labeled/rtt/readied.3.gz
+ratio: 0.5
+languages:
+   - de
+   - fi
+   - fr
+   - lv
+bpe_model: ../../bpe/monolingual_16000/monolingual.16000.model
+src_dropout: 0.1
+trials: 50
+groups: 1
+min_len: 1
+max_len: 400
+threads: 40
+lines: 10000
+forming_lines: 100000
+tokenization_lines: 100000
+

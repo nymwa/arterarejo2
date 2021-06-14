@@ -1,0 +1,11 @@
+source: ../../../start.sh
+iter: 1
+threads: 40
+dataset:
+   train_source: ../../../preprocessed/bea19/train/bea19_train.reg.src
+   train_target: ../../../preprocessed/bea19/train/bea19_train.reg.trg
+   valid_pref: ../../../preprocessed/bea19/eval/bea19_train_16000/bea19_valid
+prepare:
+   max_length: 400
+   bpe_model: ../../../bpe/bea19_train_16000/bea19_train.16000.model
+

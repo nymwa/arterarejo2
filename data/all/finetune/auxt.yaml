@@ -1,0 +1,9 @@
+source: ../../../start.sh
+iter: 200
+threads: 40
+dataset:
+   valid_pref: ../../../preprocessed/bea19/eval/monolingual_16000/bea19_valid
+preprocess:
+   prepared: ../../monolingual_16000/bea19/
+   src_dict_path: ../pretrain/0/data-bin/dict.src.txt
+

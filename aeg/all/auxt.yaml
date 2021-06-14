@@ -1,0 +1,54 @@
+source: ../../start.sh
+readied:
+   - ../../labeled/rtt/readied.0.gz
+   - ../../labeled/rtt/readied.1.gz
+   - ../../labeled/rtt/readied.2.gz
+   - ../../labeled/rtt/readied.3.gz
+   - ../../labeled/rtt/readied.4.gz
+   - ../../labeled/rtt/readied.5.gz
+   - ../../labeled/rtt/readied.6.gz
+   - ../../labeled/rtt/readied.7.gz
+   - ../../labeled/rtt/readied.8.gz
+   - ../../labeled/rtt/readied.9.gz
+   - ../../labeled/rtt/readied.10.gz
+   - ../../labeled/rtt/readied.11.gz
+   - ../../labeled/rtt/readied.12.gz
+   - ../../labeled/rtt/readied.13.gz
+   - ../../labeled/rtt/readied.14.gz
+   - ../../labeled/rtt/readied.15.gz
+   - ../../labeled/rtt/readied.16.gz
+   - ../../labeled/rtt/readied.17.gz
+   - ../../labeled/rtt/readied.18.gz
+   - ../../labeled/rtt/readied.19.gz
+   - ../../labeled/rtt/readied.20.gz
+   - ../../labeled/rtt/readied.21.gz
+   - ../../labeled/rtt/readied.22.gz
+   - ../../labeled/rtt/readied.23.gz
+   - ../../labeled/rtt/readied.24.gz
+   - ../../labeled/rtt/readied.25.gz
+   - ../../labeled/rtt/readied.26.gz
+   - ../../labeled/rtt/readied.27.gz
+   - ../../labeled/rtt/readied.28.gz
+   - ../../labeled/rtt/readied.29.gz
+   - ../../labeled/rtt/readied.30.gz
+   - ../../labeled/rtt/readied.31.gz
+   - ../../labeled/rtt/readied.32.gz
+   - ../../labeled/rtt/readied.33.gz
+   - ../../labeled/rtt/readied.34.gz
+   - ../../labeled/rtt/readied.35.gz
+   - ../../labeled/rtt/readied.36.gz
+   - ../../labeled/rtt/readied.37.gz
+   - ../../labeled/rtt/readied.38.gz
+   - ../../labeled/rtt/readied.39.gz
+ratio: 0.0
+bpe_model: ../../bpe/monolingual_16000/monolingual.16000.model
+src_dropout: 0.1
+trials: 100
+groups: 20
+min_len: 1
+max_len: 400
+threads: 40
+lines: 10000
+forming_lines: 100000
+tokenization_lines: 100000
+

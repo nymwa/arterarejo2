@@ -1,0 +1,10 @@
+- del:
+   mean: 0.01
+   std: 0.01
+- mask:
+   mean: 0.15
+   std: 0.15
+   p: 0.8
+   threshold_mean: 0.20
+   threshold_std: 0.20
+

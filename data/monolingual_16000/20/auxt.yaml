@@ -1,0 +1,11 @@
+source: ../../../start.sh
+iter: 150
+threads: 40
+dataset:
+   train_source: ../../../preprocessed/bea19/train/bea19_train.reg.src
+   train_target: ../../../preprocessed/bea19/train/bea19_train.reg.trg
+prepare:
+   max_length: 400
+   bpe_model: ../../../bpe/monolingual_16000/monolingual.16000.model
+   source_dropout: 0.2
+

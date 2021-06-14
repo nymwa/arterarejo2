@@ -1,0 +1,14 @@
+source: ../../../start.sh
+iter: 150
+threads: 40
+dataset:
+   train_source: ../../../preprocessed/bea19/fce/fce.reg.src
+   train_target: ../../../preprocessed/bea19/fce/fce.reg.trg
+   valid_pref: ../../../preprocessed/bea19/eval/monolingual_16000/bea19_valid
+prepare:
+   max_length: 400
+   bpe_model: ../../../bpe/monolingual_16000/monolingual.16000.model
+   source_dropout: 0.1
+preprocess:
+   src_dict_path: ../pretrain/0/data-bin/dict.src.txt
+
