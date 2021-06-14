@@ -1,0 +1,40 @@
+source: ../../../start.sh
+data: ../../../data/bea19_train/16000_0/
+data_indices:
+   - [0]
+   - [0]
+   - [0]
+   - [0]
+   - [0]
+train:
+   copy_data_bin: true
+   seed_list: [4654, 9630, 27029, 38836, 46738]
+   max_epoch: 50
+   update_freq: 1
+   max_tokens: 4000
+   arch: big
+   dropout: 0.3
+   attention_dropout: 0.2
+   activation_dropout: 0.2
+   lr: 0.0015
+   warmup_updates: 8000
+   clip_norm: 1.0
+   weight_decay: 0.001
+generate:
+   epoch:
+      start: 11
+      step: 1
+   batch_size: 16
+rerank:
+   arch_list:
+      - bert_base_uncased
+      - bert_base_cased
+      - bert_large_uncased
+      - bert_large_cased
+      - roberta_base
+      - roberta_large
+      - distilroberta_base
+   lambda: [0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3, 0.325, 0.35, 0.375, 0.4, 0.425, 0.45, 0.475, 0.5]
+eval_config: ../../eval_config.bea19_train_16000.absolute.yaml
+
+

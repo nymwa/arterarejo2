@@ -1,0 +1,38 @@
+source: ../../../start.sh
+data: ../../../data/16m_drop_0/finetune
+data_indices:
+   - [0]
+   - [0]
+   - [0]
+   - [0]
+   - [0]
+train:
+   restore_file:
+      - ../pretrain/0/checkpoints/checkpoint10.pt
+      - ../pretrain/1/checkpoints/checkpoint10.pt
+      - ../pretrain/2/checkpoints/checkpoint10.pt
+      - ../pretrain/3/checkpoints/checkpoint10.pt
+      - ../pretrain/4/checkpoints/checkpoint10.pt
+   copy_data_bin: true
+   seed_list: [4654, 9630, 27029, 38836, 46738]
+   max_epoch: 40
+   update_freq: 4
+   max_tokens: 4000
+   arch: big
+   dropout: 0.3
+   attention_dropout: 0.2
+   activation_dropout: 0.2
+   lr: 0.001
+   warmup_updates: 8000
+   clip_norm: 0.3
+   weight_decay: 0.001
+generate:
+   epoch:
+      start: 11
+      step: 1
+   batch_size: 32
+   ensemble_batch_size: 16
+rerank:
+   lambda: [0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3, 0.325, 0.35, 0.375, 0.4, 0.425, 0.45, 0.475, 0.5]
+eval_config: ../../eval_config.monolingual_16000.absolute.yaml
+
